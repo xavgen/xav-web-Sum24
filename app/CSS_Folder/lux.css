@@ -1,0 +1,21 @@
+/* LUX stuff */
+
+.lux {
+    color: #de8397;
+    padding: 1vw;
+    @apply rounded-lg border border-transparent mx-4 transition-colors;
+  }
+  
+  .lux:hover {
+    color: #ffe39e;
+    /* border-color: #642c39a2; 
+    background-color: #642c3947;*/
+  }
+  
+  .lux2 {
+    @apply inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none;
+  }
+  
+  .lux3 {
+    font-size: min(4vw, 1.5rem);
+  }

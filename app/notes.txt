@@ -1,0 +1,11 @@
+Colors:
+    white
+    black
+    #DE8397 (pinkish color)  
+    #843245 (dark pinkish color)
+    #201D2D   32, 29, 45   (bluish purple)  
+    #FFE39E  255, 227, 158    (yellowish)
+    #9F8FA9 (lightish prple)
+    #708E99 (light bluish)
+
+Need to make the colors slightly more vibrant

@@ -1,0 +1,59 @@
+.centerStuff {
+    overflow: hidden;
+    text-align: center;
+    color: var(--bluish-purp-color);
+    font-size: min(10vw, 100px);
+    padding: 15%;
+    height: 100vh;
+    width: 100vw;
+    @apply flex justify-center text-center items-center;
+  }
+
+  .colAbt {
+    width: 40vw;
+    max-width: 923px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+  }
+  .colAbt2 {
+    width: 40vw;
+    height: 40vh;
+    max-width: 923px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .purpFormat {
+    @apply flex flex-row justify-center items-center;
+  }
+
+  .meImage {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .purpFormat {
+        @apply flex flex-col justify-center items-center;
+    }
+    .colAbt2 {
+        margin-top: 5vh;
+        width: 65vw;
+        height: 30vw;
+        font-size: 16px;
+    }
+    .meImage {
+        width: 55vw;
+        height: 55vw;
+    }
+  }
+
+  

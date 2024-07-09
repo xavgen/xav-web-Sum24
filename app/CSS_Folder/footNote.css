@@ -1,0 +1,41 @@
+/* Foot Note */
+
+.footNote {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
+    font-size: min(5vw, 15px);
+    color: #176556;
+    align-items: center;
+    text-shadow: 0px 0px 1px #708e99;
+    /* color: var(--opp-purp-color); */
+    /* fill: #ffffff; */
+    /* mix-blend-mode: difference;  */
+  }
+  
+  .footNote:hover {
+    color: #ffe39e;
+    /* background-color: #201d2d; */
+    padding-left: 8px;
+    
+    border-radius: 5px;
+    animation: bgFadeIn ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .footNote {
+      position: fixed;
+      bottom: 0;
+      margin-left: 10%;
+      margin-right: 10%;
+      /* margin-bottom: 2%; */
+      width: 80%;
+      text-align: center;
+      font-size: min(5vw, 12px);
+    }
+  }
+  

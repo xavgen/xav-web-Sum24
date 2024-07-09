@@ -1,0 +1,147 @@
+/* Navbar Design */
+
+.navDesign {
+  /* background-color: var(--dark-pink-color); */
+  margin-left: 1vw;
+  margin-top: 1vw;
+  margin-right: 1vw;
+  color: var(--green-color);
+  @apply text-lg px-4 py-2 rounded bg-opacity-80;
+}
+
+@keyframes bgFadeIn {
+  100% {
+    opacity: 1;
+    background-color: #201d2d;
+  }
+}
+
+.navDesign:hover {
+  animation: bgFadeIn ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.navDesign:hover {
+  color: #ffe39e;
+}
+
+.navDes2 {
+  text-align: center;
+  margin-top: 2vh;
+  @apply fixed top-0 left-0 w-full z-50 transition-opacity duration-500 ease-in-out;
+}
+
+.navDes3 {
+  text-align: center;
+  margin-top: 3vh;
+  @apply fixed top-0 left-0 w-full z-50 transition-opacity duration-500 ease-in-out;
+}
+
+.navButtMob {
+  display: none;
+}
+
+.navbarMob {
+  display: none;
+}
+
+.xgLogoImg {
+  margin-left: 3vh;
+  margin-bottom: 2vw;
+  max-width: 50px;
+  @apply object-cover;
+}
+
+.navMobile {
+  display: none;
+}
+
+.navDesignMob {
+    display: none;
+}
+
+
+/* Media queries */
+
+/*nav qs */
+
+@media screen and (max-width: 900px) {
+  .navDes2 {
+    display: none;
+  }
+  .navButtMob {
+    margin-left: 5vw;
+    margin-top: 10vh;
+    width: 16vw;
+    max-width: 50px;
+    height: 6vw;
+    max-height: 35px;
+    background-color: #201d2d;
+    /* border: 2px solid #201d2d; */
+    border-radius: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .navbarMob {
+    display: block;
+    z-index: 0;
+  }
+
+  .navImgResDD {
+    width: 2vh;
+    max-width: 14px;
+    z-index: 0;
+  }
+
+  .navImgResXG {
+    width: 8vh;
+    z-index: 0;
+  }
+
+  .xgLogoImg {
+    margin-left: 5vw;
+    margin-top: 6vw;
+    margin-bottom: 2vw;
+    z-index: 0;
+
+    @apply object-cover;
+  }
+
+  .navDesignMob {
+    display: block;
+    /* background-color: var(--dark-pink-color); */
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    color: var(--pink-color);
+    @apply text-lg px-4 py-2 rounded bg-opacity-80;
+  }
+
+  .navMobile {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: #201d2d;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+  }
+
+
+}
+
+/* nav layer */
+
+/* .navLayer, .layer2 {
+  grid-row: 1;
+  grid-column: 1;
+} */
