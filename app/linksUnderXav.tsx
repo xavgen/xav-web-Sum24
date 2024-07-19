@@ -19,7 +19,7 @@ const info: Data[] = [
   },
   {
     title: "Involvements",
-    link: "Involvements",
+    link: "involvements",
   },
   {
     title: "Art",

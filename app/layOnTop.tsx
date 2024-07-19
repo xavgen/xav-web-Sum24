@@ -5,7 +5,7 @@ import NavMobile from "./navMobile";
 
 export default function LOT() {
   return (
-    <span>
+    <span style={{zIndex: '2'}}>
       <NavMobile />
       <XGLogo />
       <Navbar />

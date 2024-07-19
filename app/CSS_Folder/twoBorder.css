@@ -1,44 +1,52 @@
 /* Two Border thing */
 
 .outsideOfBorder {
-    padding: 15vh;
-    @apply flex min-h-screen flex-row justify-center;
-  }
-  
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 18vh;
+  margin-bottom: 18vh;
+  height: 75%;
+  @apply flex flex-row justify-center text-center items-center;
+}
+
+.pageBorderOutside {
+  border: 6px double var(--blue-color);
+  margin-top: 6vh;
+  padding: 5px;
+  width: 75%;
+}
+
+.pageBorderInside {
+  border: 2px solid var(--blue-color);
+  border-radius: min(5vw, 2rem);
+  overflow: hidden;
+  text-align: center;
+  color: var(--bluish-purp-color);
+  font-size: min(10vw, 100px);
+  padding: 12%;
+  height: 100%;
+  @apply flex justify-center text-center items-center;
+}
+
+@media screen and (max-width: 900px) {
   .pageBorderOutside {
     border: 6px double var(--blue-color);
-    margin-top: 6vh;
+    margin-top: 20vh;
     padding: 5px;
-    width: 75%;
+    width: 100%;
   }
-  
+
+  .outsideOfBorder {
+    margin: 3vh;
+  padding-bottom: 20vh;
+  height: 40vh;
+  @apply flex flex-row justify-center text-center items-start;
+  }
+
   .pageBorderInside {
-    border: 2px solid var(--blue-color);
-    border-radius: min(5vw, 2rem);
-    overflow: hidden;
-    text-align: center;
-    color: var(--bluish-purp-color);
-    font-size: min(10vw, 100px);
-    padding: 15%;
-    height: 100%;
-    @apply flex justify-center text-center items-center;
+    font-size: min(6vw, 100px);
+    padding: 10vh;
   }
-  
-  @media screen and (max-width: 900px) {
-    .pageBorderOutside {
-      border: 6px double var(--blue-color);
-      margin-top: 20vh;
-      padding: 5px;
-      width: 100%;
-      height: 60%;
-    }
-  
-    .outsideOfBorder {
-      padding: 12vw;
-    }
-  
-    .pageBorderInside {
-      font-size: min(5vw, 100px);
-  
-    }
-  }
+
+
+}

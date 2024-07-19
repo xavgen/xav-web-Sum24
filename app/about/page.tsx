@@ -1,27 +1,11 @@
-'use client';
 
-import Image from "next/image";
-// import Navbar from "../old (delete after fin)/Navbar";
-import Link from "next/link";
 import Home from "../page";
 import "../CSS_Folder/twoBorder.css";
-import "../CSS_Folder/about.css";
+import "./about.css";
 
 import LOT from "../layOnTop";
 import ABTitems from "./aboutItems";
-
-
-
-import React, { useState } from "react";
-
-// type AboutItems = {
-//   item: string;
-// };
-
-// const items: AboutItems[] = [
-
-// ];
-
+import XGLogo from "../xgLogo";
 
 
 export default function About() {
@@ -35,12 +19,12 @@ export default function About() {
 
       <div className="outsideOfBorder fontMilky">
         <div className="pageBorderOutside">
-          <div className="ripple pageBorderInside">So who am I?</div>
+          <div className="ripple pageBorderInside">Who I am</div>
         </div>
       </div>
 
       {/* ............................................................................................... */}
-
+      
       <div className="bgTrans"></div>
 
       <div className="swapBackground fontMilky purpFormat">
@@ -69,7 +53,8 @@ export default function About() {
         <ABTitems />
 
       </div>
-
+      
+      {/* <XGLogo/> */}
       <LOT />
     </main>
   );

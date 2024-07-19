@@ -15,14 +15,14 @@ export default function XGLogo() {
         ></img>
       </Link>
 
-      <button onClick={openNavMobile} className="navButtMob">
+      <button onClick={openNavMobile} className="navButtMob" style={{zIndex: '3'}}>
 
         <img
           src="/dropdownWHITE.png"
           alt="button"
           className="navImgResDD"
         ></img>
-        <i className="fa fa-caret-down"></i>
+        {/* <i className="fa fa-caret-down"></i> */}
       </button>
     </nav>
   );

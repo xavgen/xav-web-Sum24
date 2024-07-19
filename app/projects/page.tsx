@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 
 import Link from "next/link";
@@ -5,64 +6,40 @@ import Home from "../page";
 import Navbar from "../Navbar";
 import FootNote from "../footNote";
 import LOT from "../layOnTop";
+import "../CSS_Folder/twoBorder.css";
+import PROJitems from "./projectItems";
+import "./proj.css";
+import PURPfade from "./purpFade";
+import XGLogo from "../xgLogo";
 
-// const text = ["hey text", "another one", "more content", "aehlaewkhfakjefh"];
-
-type Data = {
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-};
-
-const info: Data[] = [
-  {
-    title: "Runway Validity App",
-    description:
-      "Functioned as the team lead of 3 other SWEG interns to create an application that determines the validity of military aircraft takeoffs & landings based real-time parameters collected via C# web-scraping (Robins Air Force Internship)",
-    image: "/rafb.png",
-    link: "",
-  },
-  {
-    title: "RasPi Smart Car",
-    description:
-      "Worked as the primary coder utilizing a Raspberry Pi to control an A.I.-powered smart car simultaneously performing color & object detection, ultrasound, and infrared line tracking (Robins Air Force Internship)",
-    image: "/capt_Timmy.jpg",
-    link: "",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "Created this website using NextJS, TailwindCSS, and Vercel to showcase my skills, projects, and involvements.",
-    image: "/me_1.jpg",
-    link: "",
-  },
-  {
-    title: "From Nava (Game)",
-    description:
-      "Collaborated with programming, music, design, and writer teams spanning 30+ team members to create an indie exploration/mystery game",
-    image: "/fromNavaPolaroid1.png",
-    link: "",
-  },
-  {
-    title: "2023 Halo-Halo Event",
-    description:
-      "Cooperated with sponsors, layout, marketing, and executive board teams to successively host 400+ guests through food, games, and performances",
-    image: "/fsa_1.jpg",
-    link: "",
-  },
-];
 
 export default function Projects() {
   return (
     <main
-      className="flex min-h-screen flex-row justify-between p-24 font-mono" // changing flex-row to flex-col doesn't seem to change anything
-      style={{
-        background:
-          "radial-gradient(circle at 10% 20%, rgba(47, 27, 37, 0.2), transparent 50%), radial-gradient(circle at 60% 70%, rgba(81, 0, 143, 0.2), transparent 50%), radial-gradient(circle at 90% 50%, rgba(81, 0, 143, 0.2), transparent 50%)",
-      }}
+      className="flex min-h-screen flex-col justify-between font-mono" // changing flex-row to flex-col doesn't seem to change anything
+      // style={{
+      //   background:
+      //     "radial-gradient(circle at 10% 20%, rgba(47, 27, 37, 0.2), transparent 50%), radial-gradient(circle at 60% 70%, rgba(81, 0, 143, 0.2), transparent 50%), radial-gradient(circle at 90% 50%, rgba(81, 0, 143, 0.2), transparent 50%)",
+      // }}
     >
-      <div
+      {/* .................... Find out how to make this another .tsx file someday ...................... */}
+
+      <div className="outsideOfBorder fontMilky">
+        <div className="pageBorderOutside">
+          <div className="ripple pageBorderInside">My Projects</div>
+        </div>
+      </div>
+
+      {/* ............................................................................................... */}
+
+      <div className="bgTrans"></div>
+      
+      <div className="swapBackground fontMilky purpFormat ">
+      {/* <PURPfade/> */}
+          <PROJitems />
+      </div>
+
+      {/* <div
         className=" border rounded-3xl about2-content flex justify-between items-centered m-12 mr-20 ml-20 pb-8 mt-10" // removed ripple
         // style={{
         //   borderColor: "rgba(83, 56, 87)",
@@ -125,7 +102,8 @@ export default function Projects() {
             ))}
           </ul>
         </div>
-      </div>
+      </div> */}
+      {/* <XGLogo/> */}
       <LOT />
     </main>
   );
