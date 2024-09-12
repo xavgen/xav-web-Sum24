@@ -33,7 +33,9 @@ export default function Home() {
         >
           <br></br>
           <XavGen />
-          <LUX />
+
+          {/* This is where hydration error is */}
+          <LUX /> 
         </div>
       </div>
       {/* </div> */}

@@ -50,7 +50,7 @@ const info: Data[] = [
   },
 ];
 
-export default function Projects() {
+export default function Involvements() {
   return (
     <main
       className="flex min-h-screen flex-row justify-between p-24 font-mono"

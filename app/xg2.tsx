@@ -5,14 +5,14 @@ export default function XG2() {
     <div className=" m-5 relative flex flex-col place-items-center align-middle xgMobFormat">
       <div
         className={` font-bold bgFadeIn text-center`}
-        style={{
-          borderRadius: "25vw",
-          fontSize: "min(15vw, 5rem)",
-          paddingRight: "10vw",
-          paddingLeft: "10vw",
-          paddingTop: "5vh",
-          paddingBottom: "5vh",
-        }}
+        // style={{
+        //   borderRadius: "25vw",
+        //   fontSize: "min(15vw, 5rem)",
+        //   paddingRight: "10vw",
+        //   paddingLeft: "10vw",
+        //   paddingTop: "5vh",
+        //   paddingBottom: "5vh",
+        // }}
       >
         <Link href="https://www.linkedin.com/in/xavier-genio">
           <span style={{ whiteSpace: "nowrap" }}>
