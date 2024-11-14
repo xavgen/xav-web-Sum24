@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+// Not in use atm ; responsible for hydration
 export default function XG2() {
   return (
     <div className=" m-5 relative flex flex-col place-items-center align-middle xgMobFormat">

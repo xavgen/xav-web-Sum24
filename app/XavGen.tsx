@@ -30,7 +30,7 @@ export default function XavGen() {
               )
             )}
           </span>
-          <XG2 />
+          {/* <XG2 /> */}
         </Link>
       </div>
     </div>
